@@ -9,20 +9,23 @@
   "scripts": {
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack -d --mode development",
-    "build-prod": "webpack -p --mode production"
+    "build-prod": "webpack -p --mode production",
+    "start": "webpack --watch --mode=development"
   },
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10",
-    "babel-loader": "^8.0.6",
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
+    "autoprefixer": "^9.7.2",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^3.2.0",
-    "style-loader": "^1.0.0",
-    "sass-loader": "^8.0.0",
     "node-sass": "^4.13.0",
     "postcss-loader": "^3.0.0",
-    "autoprefixer": "^9.7.2"
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
